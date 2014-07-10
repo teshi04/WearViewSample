@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SampleApplication</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="menu">
+        <item>WatchViewStub</item>
+        <item>DelayedConfirmationView</item>
+    </string-array>
+
+    <string name="title_activity_delayed_confirmation_view">DelayedConfirmationViewActivity</string>
+    <string name="title_activity_watch_view_stub">WatchViewStubActivity</string>
+    <string name="label_sample_text">sample text</string>
+    <string name="label_cancel">Cancel</string>
+
+</resources>
