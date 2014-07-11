@@ -19,6 +19,7 @@ public class ConfirmationActivityActivity extends Activity {
 
         Button successButton = (Button) findViewById(R.id.success_button);
         Button failureButton = (Button) findViewById(R.id.failure_button);
+        Button openOnPhoneButton = (Button) findViewById(R.id.open_on_phone_button);
 
         successButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,13 @@ public class ConfirmationActivityActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startConfirmationActivity(ConfirmationActivity.FAILURE_ANIMATION, "failure");
+            }
+        });
+
+        openOnPhoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startConfirmationActivity(ConfirmationActivity.OPEN_ON_PHONE_ANIMATION, "open_on_phone");
             }
         });
     }

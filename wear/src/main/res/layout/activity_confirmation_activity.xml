@@ -21,4 +21,12 @@
         android:layout_below="@id/success_button"
         android:text="@string/failure"/>
 
+    <Button
+        android:id="@+id/open_on_phone_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/failure_button"
+        android:text="@string/open_on_phone"/>
+
+
 </RelativeLayout>
