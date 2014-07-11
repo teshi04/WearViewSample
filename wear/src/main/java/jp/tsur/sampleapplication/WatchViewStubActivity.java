@@ -17,7 +17,6 @@ public class WatchViewStubActivity extends Activity {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
                 TextView textView = (TextView) stub.findViewById(R.id.text);
-                textView.setText(getString(R.string.hello_world));
             }
         });
     }
