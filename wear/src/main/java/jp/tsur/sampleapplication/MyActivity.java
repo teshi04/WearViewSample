@@ -34,6 +34,9 @@ public class MyActivity extends Activity {
                     case 2:
                         intent = new Intent(MyActivity.this, ConfirmationActivityActivity.class);
                         break;
+                    case  3:
+                        intent = new Intent(MyActivity.this, DismissOverlayViewActivity.class);
+                        break;
                 }
                 startActivity(intent);
             }

@@ -29,7 +29,11 @@
             android:name=".ConfirmationActivityActivity"
             android:label="@string/title_activity_confirmation" >
         </activity>
-        <activity android:name="android.support.wearable.activity.ConfirmationActivity"/>
+        <activity android:name="android.support.wearable.activity.ConfirmationActivity" />
+        <activity
+            android:name=".DismissOverlayViewActivity"
+            android:label="@string/title_activity_dismiss_overlay_view" >
+        </activity>
     </application>
 
 </manifest>
