@@ -13,21 +13,10 @@ import android.widget.TextView;
 
 public class MyActivity extends Activity {
 
-    private TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // rect 用 と round 用で別のレイアウトを用意する場合
-//        setContentView(R.layout.activity_my);
-//        final WatchViewStub stub = (WatchViewStub) findViewById(R.id.watch_view_stub);
-//        stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
-//            @Override
-//            public void onLayoutInflated(WatchViewStub stub) {
-//                mTextView = (TextView) stub.findViewById(R.id.text);
-//            }
-//        });
-        //
         setContentView(R.layout.activity_my);
         WearableListView listView = (WearableListView) findViewById(R.id.list);
         listView.setAdapter(new Adapter(this));
