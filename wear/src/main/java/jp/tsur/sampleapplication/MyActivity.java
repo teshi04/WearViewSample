@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.wearable.activity.ConfirmationActivity;
 import android.support.wearable.view.WatchViewStub;
 import android.support.wearable.view.WearableListView;
 import android.view.LayoutInflater;
@@ -40,6 +41,9 @@ public class MyActivity extends Activity {
                         break;
                     case 1:
                         intent = new Intent(MyActivity.this, DelayedConfirmationViewActivity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(MyActivity.this, ConfirmationActivityActivity.class);
                         break;
                 }
                 startActivity(intent);
