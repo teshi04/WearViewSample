@@ -8,8 +8,6 @@ import android.widget.TextView;
 
 public class WatchViewStubActivity extends Activity {
 
-    private TextView mTextView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +16,8 @@ public class WatchViewStubActivity extends Activity {
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
-                mTextView = (TextView) stub.findViewById(R.id.text);
+                TextView textView = (TextView) stub.findViewById(R.id.text);
+                textView.setText(getString(R.string.hello_world));
             }
         });
     }
