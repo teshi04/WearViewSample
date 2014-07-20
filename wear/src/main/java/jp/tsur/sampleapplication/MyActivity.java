@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.wearable.activity.ConfirmationActivity;
-import android.support.wearable.view.WatchViewStub;
 import android.support.wearable.view.WearableListView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -34,8 +32,11 @@ public class MyActivity extends Activity {
                     case 2:
                         intent = new Intent(MyActivity.this, ConfirmationActivityActivity.class);
                         break;
-                    case  3:
+                    case 3:
                         intent = new Intent(MyActivity.this, DismissOverlayViewActivity.class);
+                        break;
+                    case 4:
+                        intent = new Intent(MyActivity.this, CircledImageViewActivity.class);
                         break;
                 }
                 startActivity(intent);

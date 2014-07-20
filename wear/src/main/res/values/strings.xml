@@ -11,6 +11,7 @@
         <item>DelayedConfirmationView</item>
         <item>ConfirmationActivity</item>
         <item>DismissOverlayView</item>
+        <item>CircledImageView</item>
     </string-array>
 
     <string name="title_activity_delayed_confirmation_view">DelayedConfirmationViewActivity</string>
@@ -24,5 +25,6 @@
     <string name="open_on_phone">open on phone</string>
     <string name="title_activity_dismiss_overlay_view">DismissOverlayViewActivity</string>
     <string name="intro_text">Long press to go back home.</string>
+    <string name="title_activity_circled_image_view">CircledImageView</string>
 
 </resources>
