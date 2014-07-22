@@ -9,13 +9,13 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class MyActivity extends Activity {
+public class WearableListViewActivity extends Activity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_wearable_list_view);
         WearableListView listView = (WearableListView) findViewById(R.id.list);
         listView.setAdapter(new Adapter(this));
         listView.setClickListener(new WearableListView.ClickListener() {
@@ -24,22 +24,22 @@ public class MyActivity extends Activity {
                 Intent intent = null;
                 switch (viewHolder.getPosition()) {
                     case 0:
-                        intent = new Intent(MyActivity.this, WatchViewStubActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, WatchViewStubActivity.class);
                         break;
                     case 1:
-                        intent = new Intent(MyActivity.this, DelayedConfirmationViewActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, DelayedConfirmationViewActivity.class);
                         break;
                     case 2:
-                        intent = new Intent(MyActivity.this, ConfirmationActivityActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, ConfirmationActivityActivity.class);
                         break;
                     case 3:
-                        intent = new Intent(MyActivity.this, DismissOverlayViewActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, DismissOverlayViewActivity.class);
                         break;
                     case 4:
-                        intent = new Intent(MyActivity.this, CircledImageViewActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, CircledImageViewActivity.class);
                         break;
                     case 5:
-                        intent = new Intent(MyActivity.this, BoxInsetLayoutActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, BoxInsetLayoutActivity.class);
                         break;
 
                 }
