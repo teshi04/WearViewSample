@@ -38,6 +38,10 @@ public class MyActivity extends Activity {
                     case 4:
                         intent = new Intent(MyActivity.this, CircledImageViewActivity.class);
                         break;
+                    case 5:
+                        intent = new Intent(MyActivity.this, BoxInsetLayoutActivity.class);
+                        break;
+
                 }
                 startActivity(intent);
             }

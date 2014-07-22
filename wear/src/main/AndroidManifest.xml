@@ -38,6 +38,10 @@
             android:name=".CircledImageViewActivity"
             android:label="@string/title_activity_circled_image_view" >
         </activity>
+        <activity
+            android:name=".BoxInsetLayoutActivity"
+            android:label="@string/title_activity_box_inset_layout" >
+        </activity>
     </application>
 
 </manifest>
