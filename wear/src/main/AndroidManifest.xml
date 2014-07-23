@@ -50,6 +50,10 @@
             android:name=".CardScrollViewActivity"
             android:label="@string/title_activity_card_scroll_view" >
         </activity>
+        <activity
+            android:name=".InsetActivityActivity"
+            android:label="@string/title_activity_inset" >
+        </activity>
     </application>
 
 </manifest>

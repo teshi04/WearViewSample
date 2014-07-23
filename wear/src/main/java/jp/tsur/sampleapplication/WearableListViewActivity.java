@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.wearable.activity.InsetActivity;
 import android.support.wearable.view.CrossfadeDrawable;
 import android.support.wearable.view.WearableListView;
 import android.view.LayoutInflater;
@@ -47,6 +48,9 @@ public class WearableListViewActivity extends Activity {
                         break;
                     case 7:
                         intent = new Intent(WearableListViewActivity.this, CardScrollViewActivity.class);
+                        break;
+                    case 8:
+                        intent = new Intent(WearableListViewActivity.this, InsetActivityActivity.class);
                         break;
 
                 }
