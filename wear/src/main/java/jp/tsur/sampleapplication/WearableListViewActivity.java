@@ -4,13 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.wearable.view.CrossfadeDrawable;
 import android.support.wearable.view.WearableListView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class WearableListViewActivity extends Activity {
 
+public class WearableListViewActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,9 @@ public class WearableListViewActivity extends Activity {
                         break;
                     case 5:
                         intent = new Intent(WearableListViewActivity.this, BoxInsetLayoutActivity.class);
+                        break;
+                    case 6:
+                        intent = new Intent(WearableListViewActivity.this, CrossfadeDrawableActivity.class);
                         break;
 
                 }

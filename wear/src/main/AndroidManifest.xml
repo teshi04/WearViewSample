@@ -42,6 +42,10 @@
             android:name=".BoxInsetLayoutActivity"
             android:label="@string/title_activity_box_inset_layout" >
         </activity>
+        <activity
+            android:name=".CrossfadeDrawableActivity"
+            android:label="@string/title_activity_crossfade_drawable" >
+        </activity>
     </application>
 
 </manifest>
