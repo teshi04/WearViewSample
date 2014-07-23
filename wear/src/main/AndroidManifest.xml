@@ -46,6 +46,10 @@
             android:name=".CrossfadeDrawableActivity"
             android:label="@string/title_activity_crossfade_drawable" >
         </activity>
+        <activity
+            android:name=".CardScrollViewActivity"
+            android:label="@string/title_activity_card_scroll_view" >
+        </activity>
     </application>
 
 </manifest>

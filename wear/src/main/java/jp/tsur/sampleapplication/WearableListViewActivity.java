@@ -45,6 +45,9 @@ public class WearableListViewActivity extends Activity {
                     case 6:
                         intent = new Intent(WearableListViewActivity.this, CrossfadeDrawableActivity.class);
                         break;
+                    case 7:
+                        intent = new Intent(WearableListViewActivity.this, CardScrollViewActivity.class);
+                        break;
 
                 }
                 startActivity(intent);

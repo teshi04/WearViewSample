@@ -14,6 +14,7 @@
         <item>CircledImageView</item>
         <item>BoxInsetLayout</item>
         <item>CrossfadeDrawable</item>
+        <item>CardScrollViewActivity</item>
     </string-array>
 
     <string name="title_activity_delayed_confirmation_view">DelayedConfirmationViewActivity</string>
@@ -29,6 +30,7 @@
     <string name="intro_text">Long press to go back home.</string>
     <string name="title_activity_circled_image_view">CircledImageView</string>
     <string name="title_activity_box_inset_layout">BoxInsetLayout</string>
+    <string name="title_activity_card_scroll_view">CardScrollViewActivity</string>
     <string name="title_activity_crossfade_drawable">CrossfadeDrawableActivity</string>
 
 </resources>
