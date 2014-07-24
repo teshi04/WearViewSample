@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 /**
- * 完了！みたいな緑色のアニメーション
+ * 確認のアニメーションが表示されるActivity
  */
 public class ConfirmationActivityActivity extends Activity {
 
@@ -44,12 +44,12 @@ public class ConfirmationActivityActivity extends Activity {
     }
 
     private void startConfirmationActivity(int animationType, String message) {
+        // android.support.wearable.activity.ConfirmationActivity を AndroidManifest に書く
         Intent confirmationActivity = new Intent(this, ConfirmationActivity.class)
                 .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NO_ANIMATION)
                 .putExtra(ConfirmationActivity.EXTRA_ANIMATION_TYPE, animationType)
                 .putExtra(ConfirmationActivity.EXTRA_MESSAGE, message);
         startActivity(confirmationActivity);
-        // android.support.wearable.activity.ConfirmationActivity を AndroidManifest に書く
     }
 
 }

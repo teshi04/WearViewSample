@@ -5,13 +5,11 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.wearable.view.CrossfadeDrawable;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 
-import jp.tsur.sampleapplication.R;
-
+/**
+ * ２つDrawableを持って、その２つをブレンドして調整するメソッドを持ったDrawable
+ */
 public class CrossfadeDrawableActivity extends Activity {
 
     @Override

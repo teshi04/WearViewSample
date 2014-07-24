@@ -8,8 +8,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 
 /**
- * 画面を長押しすると、確認画面が出て × 押すと Activity が finish されるようだ
- * ほとんどのアプリで実装されてなかったけど Allthecooks では実装された
+ * ロングタップで終了することができるアプリの実装のために使う
  */
 public class DismissOverlayViewActivity extends Activity {
 

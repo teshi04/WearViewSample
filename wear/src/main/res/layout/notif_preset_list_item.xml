@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <jp.tsur.sampleapplication.WearableListItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="80dp"
@@ -21,4 +22,5 @@
         android:lineSpacingExtra="-4sp"
         android:textColor="@color/text_color"
         android:textSize="16sp" />
+
 </jp.tsur.sampleapplication.WearableListItemLayout>
