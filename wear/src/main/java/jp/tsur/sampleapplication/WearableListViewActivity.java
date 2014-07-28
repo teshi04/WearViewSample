@@ -24,28 +24,28 @@ public class WearableListViewActivity extends Activity {
                 Intent intent = null;
                 switch (viewHolder.getPosition()) {
                     case 0:
-                        intent = new Intent(WearableListViewActivity.this, WatchViewStubActivity.class);
-                        break;
-                    case 1:
-                        intent = new Intent(WearableListViewActivity.this, DelayedConfirmationViewActivity.class);
-                        break;
-                    case 2:
-                        intent = new Intent(WearableListViewActivity.this, ConfirmationActivityActivity.class);
-                        break;
-                    case 3:
-                        intent = new Intent(WearableListViewActivity.this, DismissOverlayViewActivity.class);
-                        break;
-                    case 4:
-                        intent = new Intent(WearableListViewActivity.this, CircledImageViewActivity.class);
-                        break;
-                    case 5:
                         intent = new Intent(WearableListViewActivity.this, BoxInsetLayoutActivity.class);
                         break;
-                    case 6:
+                    case 1:
+                        intent = new Intent(WearableListViewActivity.this, CardScrollViewActivity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(WearableListViewActivity.this, CircledImageViewActivity.class);
+                        break;
+                    case 3:
                         intent = new Intent(WearableListViewActivity.this, CrossfadeDrawableActivity.class);
                         break;
+                    case 4:
+                        intent = new Intent(WearableListViewActivity.this, DelayedConfirmationViewActivity.class);
+                        break;
+                    case 5:
+                        intent = new Intent(WearableListViewActivity.this, DismissOverlayViewActivity.class);
+                        break;
+                    case 6:
+                        intent = new Intent(WearableListViewActivity.this, WatchViewStubActivity.class);
+                        break;
                     case 7:
-                        intent = new Intent(WearableListViewActivity.this, CardScrollViewActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, ConfirmationActivityActivity.class);
                         break;
                     case 8:
                         intent = new Intent(WearableListViewActivity.this, InsetActivityActivity.class);

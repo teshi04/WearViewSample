@@ -7,14 +7,14 @@
     <string name="hello_world">Hello world!</string>
 
     <string-array name="menu">
-        <item>WatchViewStub</item>
-        <item>DelayedConfirmationView</item>
-        <item>ConfirmationActivity</item>
-        <item>DismissOverlayView</item>
-        <item>CircledImageView</item>
         <item>BoxInsetLayout</item>
-        <item>CrossfadeDrawable</item>
         <item>CardScrollView</item>
+        <item>CircledImageView</item>
+        <item>CrossfadeDrawable</item>
+        <item>DelayedConfirmationView</item>
+        <item>DismissOverlayView</item>
+        <item>WatchViewStub</item>
+        <item>ConfirmationActivity</item>
         <item>InsetActivity</item>
     </string-array>
 
