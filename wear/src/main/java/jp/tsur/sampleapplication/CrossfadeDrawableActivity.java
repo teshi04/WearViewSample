@@ -18,11 +18,11 @@ public class CrossfadeDrawableActivity extends Activity {
         setContentView(R.layout.activity_crossfade_drawable);
 
         Resources resources = getResources();
-        Drawable droid = resources.getDrawable(R.drawable.ic_launcher);
-        Drawable neko = resources.getDrawable(R.drawable.neko);
+        Drawable background1 = resources.getDrawable(R.drawable.background1);
+        Drawable background2 = resources.getDrawable(R.drawable.background2);
         CrossfadeDrawable crossfadeDrawable = new CrossfadeDrawable();
-        crossfadeDrawable.setBase(droid);
-        crossfadeDrawable.setFading(neko);
+        crossfadeDrawable.setBase(background1);
+        crossfadeDrawable.setFading(background2);
         crossfadeDrawable.setProgress(0.5f);
 
         ImageView imageView = (ImageView) findViewById(R.id.crossfade_image);
