@@ -24,9 +24,9 @@
     <string name="label_cancel">Cancel</string>
     <string name="title_activity_confirmation">ConfirmationActivityActivity</string>
     <string name="action_settings">Settings</string>
-    <string name="success">success</string>
-    <string name="failure">failure</string>
-    <string name="open_on_phone">open on phone</string>
+    <string name="success">Success</string>
+    <string name="failure">Failure</string>
+    <string name="open_on_phone">Open on phone</string>
     <string name="title_activity_dismiss_overlay_view">DismissOverlayViewActivity</string>
     <string name="intro_text">Long press to go back home.</string>
     <string name="title_activity_circled_image_view">CircledImageView</string>

@@ -24,21 +24,21 @@ public class ConfirmationActivityActivity extends Activity {
         successButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startConfirmationActivity(ConfirmationActivity.SUCCESS_ANIMATION, "success");
+                startConfirmationActivity(ConfirmationActivity.SUCCESS_ANIMATION, getString(R.string.success));
             }
         });
 
         failureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startConfirmationActivity(ConfirmationActivity.FAILURE_ANIMATION, "failure");
+                startConfirmationActivity(ConfirmationActivity.FAILURE_ANIMATION, getString(R.string.failure));
             }
         });
 
         openOnPhoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startConfirmationActivity(ConfirmationActivity.OPEN_ON_PHONE_ANIMATION, "open_on_phone");
+                startConfirmationActivity(ConfirmationActivity.OPEN_ON_PHONE_ANIMATION, getString(R.string.open_on_phone));
             }
         });
     }
