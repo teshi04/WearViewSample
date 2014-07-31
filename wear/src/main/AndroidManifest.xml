@@ -54,6 +54,10 @@
             android:name=".InsetActivityActivity"
             android:label="@string/title_activity_inset" >
         </activity>
+        <activity
+            android:name=".GridViewPagerActivity"
+            android:label="@string/title_activity_grid_view_pager" >
+        </activity>
     </application>
 
 </manifest>

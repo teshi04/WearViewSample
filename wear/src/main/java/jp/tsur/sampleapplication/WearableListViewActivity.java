@@ -42,12 +42,15 @@ public class WearableListViewActivity extends Activity {
                         intent = new Intent(WearableListViewActivity.this, DismissOverlayViewActivity.class);
                         break;
                     case 6:
-                        intent = new Intent(WearableListViewActivity.this, WatchViewStubActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, GridViewPagerActivity.class);
                         break;
                     case 7:
-                        intent = new Intent(WearableListViewActivity.this, ConfirmationActivityActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, WatchViewStubActivity.class);
                         break;
                     case 8:
+                        intent = new Intent(WearableListViewActivity.this, ConfirmationActivityActivity.class);
+                        break;
+                    case 9:
                         intent = new Intent(WearableListViewActivity.this, InsetActivityActivity.class);
                         break;
 
