@@ -21,7 +21,6 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.support.wearable.view.CardFragment;
 import android.support.wearable.view.FragmentGridPagerAdapter;
-import android.support.wearable.view.ImageReference;
 import android.view.Gravity;
 
 /**
@@ -117,10 +116,10 @@ public class SampleGridPagerAdapter extends FragmentGridPagerAdapter {
         return fragment;
     }
 
-    @Override
-    public ImageReference getBackground(int row, int column) {
-        return ImageReference.forDrawable(BG_IMAGES[row % BG_IMAGES.length]);
-    }
+//    @Override
+//    public ImageReference getBackground(int row, int column) {
+//        return ImageReference.forDrawable(BG_IMAGES[row % BG_IMAGES.length]);
+//    }
 
     @Override
     public int getRowCount() {

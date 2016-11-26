@@ -4,8 +4,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.support.wearable.view.WearableListView;
+import android.support.wearable.view.WearableRecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -16,13 +19,15 @@ public class WearableListViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wearable_list_view);
-        WearableListView listView = (WearableListView) findViewById(R.id.list);
-        listView.setAdapter(new Adapter(this));
-        listView.setClickListener(new WearableListView.ClickListener() {
+        WearableRecyclerView list = (WearableRecyclerView) findViewById(R.id.list);
+        list.setCircularScrollingGestureEnabled(true);
+
+        Adapter adapter = new Adapter(this) {
             @Override
-            public void onClick(WearableListView.ViewHolder viewHolder) {
+            void onItemClick(int position) {
                 Intent intent = null;
-                switch (viewHolder.getPosition()) {
+                switch (position) {
+
                     case 0:
                         intent = new Intent(WearableListViewActivity.this, BoxInsetLayoutActivity.class);
                         break;
@@ -51,23 +56,22 @@ public class WearableListViewActivity extends Activity {
                         intent = new Intent(WearableListViewActivity.this, ConfirmationActivityActivity.class);
                         break;
                     case 9:
-                        intent = new Intent(WearableListViewActivity.this, InsetActivityActivity.class);
+                        intent = new Intent(WearableListViewActivity.this, DrawerLayoutActivity.class);
                         break;
 
                 }
                 startActivity(intent);
             }
-
-            @Override
-            public void onTopEmptyRegionClick() {
-
-            }
-        });
+        };
+        list.setAdapter(adapter);
     }
 
-    private static final class Adapter extends WearableListView.Adapter {
+    private static class Adapter extends WearableRecyclerView.Adapter<RecyclerView.ViewHolder> {
         private final LayoutInflater mInflater;
         private Context mContext;
+
+        void onItemClick(int position) {
+        }
 
         private Adapter(Context context) {
             mInflater = LayoutInflater.from(context);
@@ -75,17 +79,24 @@ public class WearableListViewActivity extends Activity {
         }
 
         @Override
-        public WearableListView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new WearableListView.ViewHolder(
+        public WearableRecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            final WearableListView.ViewHolder viewHolder = new WearableListView.ViewHolder(
                     mInflater.inflate(R.layout.notif_preset_list_item, null));
+            viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onItemClick(viewHolder.getAdapterPosition());
+                }
+            });
+            return viewHolder;
         }
 
         @Override
-        public void onBindViewHolder(WearableListView.ViewHolder holder, int position) {
+        public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
             TextView view = (TextView) holder.itemView.findViewById(R.id.name);
             view.setText(mContext.getResources().getStringArray(R.array.menu)[position]);
-            holder.itemView.setTag(position);
         }
+
 
         @Override
         public int getItemCount() {

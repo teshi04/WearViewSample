@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<jp.tsur.sampleapplication.WearableListItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="80dp"
     android:gravity="center_vertical">
@@ -19,8 +19,9 @@
         android:layout_marginRight="16dp"
         android:fontFamily="sans-serif-condensed-light"
         android:gravity="center_vertical|left"
-        android:lineSpacingExtra="-4sp"
+        android:text="aaaaa"
         android:textColor="@color/text_color"
         android:textSize="16sp" />
 
-</jp.tsur.sampleapplication.WearableListItemLayout>
+
+</LinearLayout>

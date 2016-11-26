@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.wearable.view.WearableListView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.wearable.view.WearableRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/list"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:dividerHeight="0dp"
-    android:scrollbars="none" />
+    android:layout_height="match_parent" />
